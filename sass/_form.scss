@@ -1,0 +1,60 @@
+.bg_img {
+  background-image: url("/bgimg1.jpg");
+  min-height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  object-fit: cover;
+}
+.container {
+  float: right;
+  margin: 95px 150px 0px 0px;
+}
+.formhead {
+  margin-top: 10px;
+  text-transform: capitalize;
+  font-size: 50px;
+  word-spacing: 10px;
+  color: gray;
+}
+.dummy {
+  font-size: 22px;
+  margin-top: 10px;
+  color: gray;
+}
+input:focus {
+  outline-width: 0px;
+}
+@mixin form {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+  margin-top: 30px;
+}
+input {
+  @include form;
+}
+.texta {
+  @include form;
+  width: 100%;
+  height: 180px;
+  font-family: sans-serif;
+  resize: none;
+}
+.texta:focus {
+  outline-width: 0px;
+}
+.but {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 6px 18px grey;
+}
+.aup {
+
+}
